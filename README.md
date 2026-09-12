@@ -92,6 +92,7 @@ The Kali Linux virtual machine was connected to a virtual network using the netw
 5. Connect the Kali Linux virtual machine to the configured virtual network.
 6. Start Kali Linux and check the network interface.
 7. Configure the required network settings.
+8. Test the connection to verify that the network is working correctly.
 
 ## 🔍 Network Testing and Validation
 
@@ -214,5 +215,3 @@ The following software and technologies were used to create and configure the cy
 | Kali Linux | Cybersecurity-focused operating system and testing environment |
 | Linux Terminal | Performing system and network configuration |
 | VirtualBox NAT Network | Providing virtual network connectivity |
-9. Test the connection to verify that the network is working correctly.
-
