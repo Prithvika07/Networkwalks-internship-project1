@@ -1,4 +1,4 @@
-🔐 About the Project
+## 🔐 About the Project
 
 This project involves creating a **virtual cybersecurity laboratory using Kali Linux and Oracle VirtualBox**. The lab provides a dedicated environment for learning and practicing cybersecurity concepts without affecting the main computer system.
 
@@ -79,3 +79,52 @@ The Kali Linux virtual machine was connected to a virtual network using the netw
 7. Configure the required network settings.
 8. Test the connection to verify that the network is working correctly.
 
+## 🌐 Virtual Network Configuration
+
+The Kali Linux virtual machine was connected to a virtual network using the networking options available in Oracle VirtualBox. The network configuration allows the virtual machine to communicate with other systems in the laboratory environment and access required network services.
+
+### Network Configuration Steps
+
+1. Open the Kali Linux virtual machine settings in VirtualBox.
+2. Open the **Network** section.
+3. Configure the network adapter.
+4. Select **NAT Network** as the network mode.
+5. Connect the Kali Linux virtual machine to the configured virtual network.
+6. Start Kali Linux and check the network interface.
+7. Configure the required network settings.
+8. Test the connection to verify that the network is working correctly.
+
+## 🔍 Network Testing and Validation
+
+After configuring the Kali Linux network, connectivity was tested to make sure the virtual machine could communicate correctly with the network.
+
+### Testing Performed
+
+1. Checked the network interface and IP address.
+2. Verified the default gateway configuration.
+3. Tested connectivity using the `ping` command.
+4. Checked DNS resolution.
+5. Verified internet connectivity from Kali Linux.
+6. Confirmed that the network configuration was working correctly.
+
+### Example Commands
+
+```bash
+ip addr
+ip route
+ping 8.8.8.8
+ping google.com
+
+## 💾 Backup and Recovery Setup
+
+A backup point was created for the Kali Linux virtual machine to provide a recovery option during cybersecurity lab activities.
+
+### Backup Steps
+
+1. Complete the basic Kali Linux configuration.
+2. Shut down the virtual machine safely.
+3. Create a snapshot of the configured Kali Linux virtual machine in VirtualBox.
+4. Verify that the snapshot was created successfully.
+5. Use the snapshot as a recovery point if the virtual machine configuration needs to be restored.
+
+The snapshot helps maintain a stable version of the lab environment while experimenting with different cybersecurity tools and configurations.
