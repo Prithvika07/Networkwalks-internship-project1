@@ -61,3 +61,22 @@ A snapshot was created in Oracle VirtualBox to save the current state of the Kal
 - Gained basic knowledge of virtual machine and network configuration.
 - Practiced basic network testing using Kali Linux.
 - Learned to create and use VirtualBox snapshots for recovery.
+
+## 🛠️ Tools & Resources
+
+- **7-Zip** – Used for extracting the Kali Linux archive.
+- **Oracle VirtualBox** – Used to create and run the Kali Linux virtual machine.
+- **Kali Linux** – Used as the cybersecurity laboratory environment.
+
+## 👤 Author
+
+**Name:** Prithvika S
+**Project:** Cybersecurity Student
+**Linkedin:** www.linkedin.com/in/prithvikas07
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at Networkwalks  
+**Week:** 01  
+**Project:** Cybersecurity & Pentesting Lab Setup  
+**Repository:** GitHub
