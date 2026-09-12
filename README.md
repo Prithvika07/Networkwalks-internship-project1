@@ -92,7 +92,6 @@ The Kali Linux virtual machine was connected to a virtual network using the netw
 5. Connect the Kali Linux virtual machine to the configured virtual network.
 6. Start Kali Linux and check the network interface.
 7. Configure the required network settings.
-8. Test the connection to verify that the network is working correctly.
 
 ## 🔍 Network Testing and Validation
 
@@ -114,6 +113,9 @@ ip addr
 ip route
 ping 8.8.8.8
 ping google.com
+```
+
+These tests helped confirm that the Kali Linux virtual machine was properly connected to the configured virtual network.
 
 ## 💾 Backup and Recovery Setup
 
@@ -128,3 +130,89 @@ A backup point was created for the Kali Linux virtual machine to provide a recov
 5. Use the snapshot as a recovery point if the virtual machine configuration needs to be restored.
 
 The snapshot helps maintain a stable version of the lab environment while experimenting with different cybersecurity tools and configurations.
+
+## Issues Faced During Setup
+
+During the initial setup of the cybersecurity lab environment, I faced a few challenges while configuring Kali Linux and VirtualBox.
+
+### 1. Understanding the Kali Linux File
+
+Initially, I was unsure which downloaded Kali Linux file needed to be used for the VirtualBox setup. I learned that Kali Linux can be distributed in different formats, such as ISO images and compressed archives, depending on the installation method.
+
+### 2. Extracting the Kali Linux Archive
+
+The Kali Linux VirtualBox package was provided as a compressed archive. I initially needed to understand why the file had to be extracted before using it. Using 7-Zip, I extracted the archive and obtained the required VirtualBox files.
+
+### 3. Understanding Virtual Machines
+
+As a beginner, I initially found the concept of a Virtual Machine (VM) confusing. I learned that a VM allows an operating system such as Kali Linux to run inside my main computer without replacing the existing operating system.
+
+### 4. Understanding NAT Networking
+
+Another challenge was understanding NAT (Network Address Translation) and how it works with VirtualBox. I learned that NAT allows a virtual machine to communicate with external networks through the host computer's network connection.
+
+### 5. Configuring the VirtualBox NAT Network
+
+I also needed to understand how to configure a NAT Network for communication between virtual machines. The selected private network was:
+
+`10.0.0.0/24`
+
+This provides a private network in which the virtual machines can communicate while using NAT for external network access.
+
+### Resolution
+
+By researching the VirtualBox networking concepts and understanding the purpose of each configuration step, I was able to complete the initial lab setup and better understand virtualization and networking fundamentals.
+
+### 6. Registering and Unregistering the Virtual Machine
+
+During the VirtualBox setup, I also encountered confusion regarding the registration and unregistration of the virtual machine.
+
+I learned that VirtualBox keeps track of virtual machines through its configuration files. When a VM is manually moved or imported, it may need to be registered with VirtualBox before it appears correctly in the VirtualBox Manager.
+
+I also learned about the difference between **unregistering** a VM and deleting its files. Unregistering removes the VM from VirtualBox's list, while the actual virtual disk and related files may still remain on the system.
+
+After understanding the registration process and checking the VM configuration, I was able to properly manage the Kali Linux virtual machine in VirtualBox.
+
+## 📚 Skills and Concepts Gained
+
+This project helped in developing practical knowledge of Linux, virtualization, and basic networking concepts.
+
+### Key Learning Outcomes
+
+- Learned how to create and manage a virtual machine using VirtualBox.
+- Gained experience with Kali Linux installation and configuration.
+- Understood basic Linux networking commands.
+- Learned how to configure a virtual network using NAT Network.
+- Learned how to check IP addresses, routes, and network connectivity.
+- Understood the importance of testing network configuration.
+- Learned how to create and use virtual machine snapshots.
+- Gained practical experience in setting up a controlled cybersecurity laboratory.
+
+## 🔐 Responsible Security Practice
+
+This cybersecurity lab is intended for **educational purposes and authorized security testing only**.
+
+All network testing and cybersecurity activities should be performed only on systems, virtual machines, and networks where permission has been given.
+
+The isolated virtual lab provides a controlled environment for learning cybersecurity concepts while reducing the risk of affecting unauthorized systems.
+
+### Key Practices
+
+- Perform security testing only with proper authorization.
+- Use the lab environment for educational and testing purposes.
+- Do not scan, attack, or access systems without permission.
+- Protect sensitive information and credentials.
+- Follow ethical and responsible cybersecurity practices.
+
+## 🛠️ Software Used
+
+The following software and technologies were used to create and configure the cybersecurity laboratory:
+
+| Software / Technology | Purpose |
+|---|---|
+| Oracle VirtualBox | Creating and managing the virtual machine |
+| Kali Linux | Cybersecurity-focused operating system and testing environment |
+| Linux Terminal | Performing system and network configuration |
+| VirtualBox NAT Network | Providing virtual network connectivity |
+9. Test the connection to verify that the network is working correctly.
+
